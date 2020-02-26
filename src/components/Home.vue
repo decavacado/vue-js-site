@@ -1,7 +1,10 @@
 <template>
-  <div class="">
+  <div class="page">
     <Nav/>
-    <h1>Welcome To the Home Page</h1>
+    <h1>Welcome to the Home Page</h1>
+    <div class="content">
+        <p>This is my single page website which uses <bold>vueJS</bold></p>
+    </div>
   </div>
 </template>
 

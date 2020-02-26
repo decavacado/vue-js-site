@@ -3,8 +3,8 @@
     <li>
       <ul><a href="http://localhost:8080/#/">Home</a></ul>
       <ul><a href="http://localhost:8080/#/about">About</a></ul>
-      <ul><a href="#">Contact</a></ul>
-      <ul><a href="#">Projects</a></ul>
+      <ul><a href="http://localhost:8080/#/contact">Contact</a></ul>
+      <ul><a href="http://localhost:8080/#/project">Projects</a></ul>
     </li>
   </div>
 </template>
@@ -15,7 +15,7 @@ export default {
 name: "Nav",
 data() {
 		return {
-
+			link: "http://localhost:8080/#/project",
 		}
 	}
 }

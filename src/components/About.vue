@@ -1,7 +1,7 @@
 <template>
 	<div class="grid">
 		<Nav/>
-		<p>Hello there Welcome to my vue JS website whihc happens to be single paged</p>
+		<h1>Welcome to the About page</h1>
 	</div>
 </template>
 
@@ -21,7 +21,13 @@ export default {
 </script>
 
 <style scoped>
-p {
-	font-size: 20px;
-}
+ h1 {
+  animation-name: move;
+  animation-duration: 1s;
+  position: relative;
+ }
+ @keyframes move {
+  from { right: 200px; }
+  to { right: 0.5px; }
+ }
 </style>
