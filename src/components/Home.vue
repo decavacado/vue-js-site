@@ -3,19 +3,22 @@
     <Nav/>
     <h1>Welcome to the Home Page</h1>
     <div class="content">
-        <p>This is my single page website which uses <bold>vueJS</bold></p>
+        <p>This is my single page website which uses vueJS</p>
+        <card content="Hello there bum "/>
     </div>
   </div>
 </template>
 
 <script>
 import Nav from "./Navbar.vue"
+import Card from "./card.vue"
 
 
 export default {
   name: 'Home',
   components: {
-    Nav
+    Nav,
+    Card,
   },
   data() {
     return {
