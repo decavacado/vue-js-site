@@ -3,15 +3,16 @@
     <Nav/>
     <h1>Welcome to the Home Page</h1>
     <div class="content">
-        <p>This is my single page website which uses vueJS</p>
-        <card content="Hello there bum "/>
+        <card content="Hello there bum this is my single page website which uses vueJS to give you a nice user experience so enjoy"/>
     </div>
+    <Made Name="Declan"/>
   </div>
 </template>
 
 <script>
 import Nav from "./Navbar.vue"
 import Card from "./card.vue"
+import Made from "./made.vue"
 
 
 export default {
@@ -19,6 +20,7 @@ export default {
   components: {
     Nav,
     Card,
+    Made,
   },
   data() {
     return {

@@ -2,16 +2,18 @@
 	<div class="grid">
 		<Nav/>
 		<h1>Welcome to the About page</h1>
+    <Made Name="Declan"/>
 	</div>
 </template>
 
 
 <script>
 import Nav from "./Navbar.vue"
+import Made from "./made.vue"
 
 export default {
   name: 'About',
-  components: { Nav, },
+  components: { Nav,Made, },
   data() {
     return {
         

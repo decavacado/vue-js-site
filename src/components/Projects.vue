@@ -2,15 +2,17 @@
 	<div>
 		<Nav/>
 		<h1>Welcome to the Projects</h1>
+		<Made Name="Declan"/>
 	</div>
 </template>
 
 <script>
 import Nav from "./Navbar.vue"
+import Made from "./made.vue"
 
 export default {
 name: "Proj",
-components: { Nav, },
+components: { Nav,Made },
 data() {
 	return {
 
