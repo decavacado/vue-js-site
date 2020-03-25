@@ -13,11 +13,10 @@ app.get("/", function(req, res){
 })
 
 app.post("/", function(req, res){
-	console.log("hello there rest");
 	console.log(req.body);
 	res.send(req.body);
 })
 
 app.listen(8080, function(){
-	console.log("hello gabbs");
+	console.log("hello gabby");
 });

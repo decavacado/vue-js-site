@@ -1,5 +1,5 @@
 <template>
-	<div class="card">
+	<div id="card" :class="{width: width_v}">
 		<p>{{ content }}</p>
 	</div>
 </template>
@@ -8,17 +8,18 @@
 export default {
 	data() {
 		return {
-
+			
 		}
 	},
 	props: {
 		content: String,
-	}
+		width_v: Boolean,
+	},
 }	
 </script>
 
 <style scoped>
-	.card {
+	#card {
 		background-color: #ffffff;
 		border-radius: 5px;
 		margin-left: 16px;
@@ -29,5 +30,8 @@ export default {
 		font-size: 40px;
 		color: #000000;
 		margin-left: 14px;
+	}
+	.width {
+		width: 50%;
 	}
 </style>

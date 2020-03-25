@@ -30,4 +30,10 @@ h1 {
 	font-family: Arial, Helvetica, sans-serif;
 	margin-left: 37px;
 }
+label {
+	color: #2cf5b2;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 16px;
+	font-size: 26px;
+}
 </style>
