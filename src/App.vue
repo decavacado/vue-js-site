@@ -19,6 +19,7 @@ export default {
 
 body {
   background-color: #49524f;
+  margin: 0;
 }
 p {
 	color: #2cf5b2;

@@ -61,6 +61,7 @@ data() {
  }
  input {
 	margin-left: 16px;
+	outline: none;
  }
  #name {
 	border-radius: 5px;
@@ -79,6 +80,7 @@ data() {
 	height: 60px;
 	border-color: #2cf5b2;
 	font-size: 20px;
+	outline: none;
 
  }
  #moved {

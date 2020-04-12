@@ -24,8 +24,9 @@ export default {
 	animation: anime .35s infinite alternate;
 }
 .po {
-	position: fixed;
-	bottom: 40px;
+	position: relative;
+	bottom: -145px;
+	margin-left: 19px;
 }
 @keyframes anime {
 	to {

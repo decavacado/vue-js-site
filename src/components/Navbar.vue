@@ -1,6 +1,7 @@
 <template>
   <div class="line">
     <li>
+      <img class="image" src="../assets/logo.png">
       <ul><a href="http://localhost:8080/#/">Home</a></ul>
       <ul><a href="http://localhost:8080/#/about">About</a></ul>
       <ul><a href="http://localhost:8080/#/contact">Contact</a></ul>
@@ -31,11 +32,24 @@ a {
 ul {
   display: inline-block;
   list-style-type: none;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 li {
   list-style-type: none;
+  position: relative;
+  left: 1264px;
 }
 a:hover {
   color: #ffffff;
+}
+.line {
+  background-color: #000000;
+}
+.image {
+  position: relative;
+  right: 1194px;
+  top: 10px;
+  width: 35px;
 }
 </style>
