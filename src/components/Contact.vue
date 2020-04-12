@@ -32,6 +32,7 @@ data() {
 	Submit: function() {
 		this.axios.post("/", {name: this.Name, message: this.Message}).then(function(res) {
 			console.log(res.data);
+			console.log("Worked")
 		}).catch(function(err) {
 			console.log(err);
 		})
