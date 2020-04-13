@@ -10,6 +10,7 @@
 			<button id="button" v-on:click="Submit">Submit</button>
 		</form>
 		<Made Name="Declan"/>
+		<i class="fa fa-github tea" aria-hidden="true"></i>
 	</div>
 </template>
 
@@ -96,4 +97,12 @@ data() {
  #button:hover {
 	background-color: #2cf5b2;
  }
+ .tea {
+	position: fixed;
+	color:  #ffffff;
+	margin-left: 14px;
+    top: 90px;
+    left: 1820px;
+	font-size: 46px;
+}
 </style>

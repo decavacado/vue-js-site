@@ -3,6 +3,7 @@
 		<Nav/>
 		<h1>Welcome to the About page</h1>
     <Made Name="Declan"/>
+    <i class="fa fa-github tea" aria-hidden="true"></i>
 	</div>
 </template>
 
@@ -32,4 +33,12 @@ export default {
   from { right: 200px; }
   to { right: 0.5px; }
  }
+.tea {
+  position: fixed;
+  color:  #ffffff;
+  margin-left: 14px;
+  top: 90px;
+  left: 1820px;
+  font-size: 46px;
+}
 </style>

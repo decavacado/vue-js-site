@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import VuePageTransition from 'vue-page-transition'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import App from './App.vue'
@@ -10,6 +11,7 @@ import Contact from "./components/Contact.vue"
 
 Vue.use(Vuerouter);
 Vue.use(VueAxios, axios);
+Vue.use(VuePageTransition)
 
 const routes = [
 	{path: "/", component: Home},

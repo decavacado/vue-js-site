@@ -1,7 +1,8 @@
 <template>
   <div class="line">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <li>
-      <img class="image" src="../assets/logo.png">
+      <i class="fa fa-terminal fa-4 tea" aria-hidden="true"></i>
       <ul><a href="http://localhost:8080/#/">Home</a></ul>
       <ul><a href="http://localhost:8080/#/about">About</a></ul>
       <ul><a href="http://localhost:8080/#/contact">Contact</a></ul>
@@ -45,11 +46,18 @@ a:hover {
 }
 .line {
   background-color: #000000;
+  overflow-x: hidden
 }
 .image {
   position: relative;
   right: 1194px;
   top: 10px;
   width: 35px;
+}
+.tea {
+  position: relative;
+  color:  #ffffff;
+  right: 1194px;
+  font-size: 46px;
 }
 </style>

@@ -23,6 +23,7 @@ export default {
 		background-color: #ffffff;
 		border-radius: 5px;
 		margin-left: 16px;
+		margin-right: 16px;
 		min-height: 150px;
 		height: auto;
 	}

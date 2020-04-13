@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-	<transition name="anim" enter-active-class="animated lightSpeedIn" leave-active-class="animated lightSpeedOut">
+	<vue-page-transition name="fade-in-left">
 		<router-view></router-view>
-	</transition>
+	</vue-page-transition>
   </div>
 </template>
 
@@ -30,6 +30,7 @@ h1 {
 	color: #2cf5b2;
 	font-family: Arial, Helvetica, sans-serif;
 	margin-left: 37px;
+	margin-right: 37px;
 }
 label {
 	color: #2cf5b2;
