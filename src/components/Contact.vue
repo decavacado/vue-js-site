@@ -2,15 +2,16 @@
 	<div>
 		<Nav/>
 		<h1>Welcome to the Contact</h1>
-		<Card content="This is the Contact Page. Fill out the Form to contact me" :width_v="true"/>
+		<Card content="Fill out the Form to contact me." :width_v="true"/>
 		<form method="POST" action="http://localhost:8080/#/contact" v-on:submit.prevent id="moved">
+			<div class="g-recaptcha" data-sitekey="your_site_key"></div>
 			<label for="name">Name:</label><br><br>
 			<input v-model="Name" type="text" name="name" id="name" placeholder="Name"><br><br>
 			<textarea id="test" v-model="Message" name="message" placeholder="Comment Here..."></textarea><br><br>
 			<button id="button" v-on:click="Submit">Submit</button>
 		</form>
 		<Made Name="Declan"/>
-		<i class="fa fa-github tea" aria-hidden="true"></i>
+		<i class="fa fa-github tea" aria-hidden="true" v-on:click="Redirect"></i>
 	</div>
 </template>
 
@@ -22,7 +23,7 @@ import Card from "./card.vue"
 
 export default {
 name: "Cot",
-components: { Nav,Made,Card, },
+components: { Nav,Made,Card,},
 data() {
 	return {
 		Name: "",
@@ -40,6 +41,9 @@ data() {
 		console.log("Hello")
 		this.Name = "";
 		this.Message = "";
+	},
+	Redirect: function(){
+		window.open("https://github.com/decavacado")
 	}
   },
 }	
@@ -101,8 +105,22 @@ data() {
 	position: fixed;
 	color:  #ffffff;
 	margin-left: 14px;
-    top: 90px;
-    left: 1820px;
+	top: 90px;
+	left: 1820px;
 	font-size: 46px;
+}
+.tea:hover {
+	cursor: pointer;
+}
+@media screen and (max-width: 768px){
+	body {
+		font-size: 30px;
+	}
+	#name{
+		width: 90%;
+	}
+	#test {
+		width: 90%;	
+	}
 }
 </style>

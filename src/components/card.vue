@@ -1,5 +1,5 @@
 <template>
-	<div id="card" :class="{width: width_v}">
+	<div id="card" :class="{width: width_v, square: square_v}">
 		<p>{{ content }}</p>
 	</div>
 </template>
@@ -14,6 +14,7 @@ export default {
 	props: {
 		content: String,
 		width_v: Boolean,
+		square_v: Boolean,
 	},
 }	
 </script>
@@ -32,7 +33,18 @@ export default {
 		color: #000000;
 		margin-left: 14px;
 	}
+	@media screen and (max-width: 500px){
+		p {
+			font-size: 30px;
+		}
+		#card {
+			width: 95%;
+		}
+	}
 	.width {
 		width: 50%;
+	}
+	.square {
+		border-radius: 0px;
 	}
 </style>

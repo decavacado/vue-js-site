@@ -11,6 +11,7 @@
 
 export default {
   name: 'App',
+
 }
 </script>
 
@@ -38,4 +39,5 @@ label {
 	margin-left: 16px;
 	font-size: 26px;
 }
+
 </style>

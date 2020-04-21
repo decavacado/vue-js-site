@@ -3,7 +3,7 @@
 		<Nav/>
 		<h1>Welcome to the About page</h1>
     <Made Name="Declan"/>
-    <i class="fa fa-github tea" aria-hidden="true"></i>
+    <i class="fa fa-github tea" aria-hidden="true" v-on:click="Redirect"></i>
 	</div>
 </template>
 
@@ -18,6 +18,11 @@ export default {
   data() {
     return {
         
+    }
+  },
+  methods: {
+    Redirect: function(){
+       window.open("https://github.com/decavacado")
     }
   }
 }
@@ -40,5 +45,8 @@ export default {
   top: 90px;
   left: 1820px;
   font-size: 46px;
+}
+.tea:hover {
+  cursor: pointer;
 }
 </style>

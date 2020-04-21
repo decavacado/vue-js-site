@@ -7,7 +7,7 @@
         <card content="Hello there bum this is my single page website which uses vueJS to give you a nice user experience so enjoy"/>
     </div>
     <Made Name="Declan"/>
-    <i class="fa fa-github tea" aria-hidden="true" @:click="name"></i>
+    <i class="fa fa-github tea" aria-hidden="true" v-on:click="Redirect"></i>
   </div>
 </template>
 
@@ -30,8 +30,8 @@ export default {
     }
   },
   methods: {
-      name: function(){
-        console.log("Hello boomer")
+      Redirect: function(){
+        window.open("https://github.com/decavacado")
       }
     }
 }
@@ -55,5 +55,15 @@ export default {
     top: 90px;
     left: 1820px;
     font-size: 46px;
+}
+.tea:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 411px){
+  .tea {
+    position: fixed;
+    top: 90px;
+    left: 1020px;
+  }
 }
 </style>
